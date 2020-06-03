@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<div class="container">
+    <form action="{% url 'create' %}">
+        <h5>  오늘의 하루를 남겨주세요✨</h5>
+        <h6> 오늘은: </h6>
+        <input type="text" name="title">
+        <br>
+        <br>
+        <h6> 어땠어?: </h6>
+        <textarea cols=35 rows=10 name="body"></textarea>
+        <br>
+        <br>
+        <input  class="btn btn-outline-danger" type="submit" value="기록하기">
+    </form>
+</div>
+{% endblock %}
